@@ -1,3 +1,3 @@
 # anaconda-transition
 
-Welcome to the Anacond solution test-bed!
+Welcome to the Anaconda solution test-bed!
