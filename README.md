@@ -9,6 +9,7 @@ Involve developers of minforge/conda-forge/bioconda or other conda potentials su
 Coordinated lobbying/advocacy effort to support development of alternative to Anaconda - similar to scientific python 
 
 https://github.com/conda/constructor
+
 https://github.com/TuftsRT/jumboconda 
 
 What practices would put an institute at risk of non-compliance
