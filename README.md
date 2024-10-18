@@ -1,6 +1,6 @@
 # anaconda-transition
 
-Menu of alternative  solutions for vetting/integrating
+Menu of alternative  solutions for vetting/integrating\\
 How to provide an anaconda equivalent software module - how to convert an existing anaconda set up and modify/redeploy it using different package manager and conda-forge channels
 Involve developers of minforge/conda-forge/bioconda or other conda potentials such as pixi
 Coordinated lobbying/advocacy effort to support development of alternative to Anaconda - similar to scientific python 
