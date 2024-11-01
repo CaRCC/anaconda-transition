@@ -2,6 +2,7 @@
 *NOTE: THIS WILL BE A TECHINCAL AS OPPOSED TO A DOCUMENTATION REPO.  THE WHITE PAPERS WILL CIRCUMSCRIBE SOLUTIONS*
 
 OLD NOTES:::
+
 Menu of alternative  solutions for vetting/integrating
 
 How to provide an anaconda equivalent software module - how to convert an existing anaconda set up and modify/redeploy it using different package manager and conda-forge channels
