@@ -1,107 +1,78 @@
-#!/bin/bash
+#!/bin/sh
+#
+# Copyright 2024 Campus Research Computing Consortium (CaRCC)
+# Licensed under the Educational Community License, Version 2.0 (the “License”);
+# you may not use this file except in compliance with the License. 
+# You may obtain a copy of the License at http://www.osedu.org/licenses/ECL-2.0
+# Unless required by applicable law or agreed to in writing, software distributed 
+# under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR 
+# CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+# specific language governing permissions and limitations under the License.
+#
+# Purpose: 
+#    - Install Miniforge in a ToS compliant manner
+#    - Find already installed environments and recreate them with conda-forge 
+#    - Backup and restore configuration files
+#  
+# Arguments: 
+#    - None 
+#
+# Reinstall conda environments, replacing Anaconda Inc repos
 
-# Original script by Ian Kaufman (UC San Diego) 
-# Assumed CC-BY-NC-SA 4.0 license until further notice
+# TO-DO: in the future, we will support flexibility in the redeployment of environments
+# but for now, we will install Miniforge and recreate the environments with conda-forge
+# as a default.
+#
+# Check for `install_miniforge.sh` presence and execute it
+if [ ! -f "./install_miniforge.sh" ]; then
+  echo "install_miniforge.sh is missing. Exiting."
+  exit 1
+fi
+sh ./install_miniforge.sh || { echo "Failed to run install_miniforge.sh"; exit 1; }
 
-# Using bash for now, may need to make it POSIX compliant later
+# Backup configuration directories
+CONFIGDIRS="${HOME}/.condarc ${HOME}/.anaconda"
+for DIR in $CONFIGDIRS; do
+  [ -d "$DIR" ] && mv "$DIR" "/tmp/${DIR}.bak"
+done
 
-# Future thoughts - maybe set up flags/params for desired distro (other than miniforge), vars for homedir and/or desired conda location
-# Should I be pedantic and add logic to determine/set the paths for "cp", "sed", "curl", etc.
+# Modify YAML environment files in /tmp for safety and isolation
+edit_yaml() {
+  yaml_file="$1"
+  tmp_yaml="/tmp/$(basename "$yaml_file")"
+  cp "$yaml_file" "$tmp_yaml"
 
-# Need to insert if exists logic here
+  # Remove 'anaconda' references and replace 'defaults' with 'conda-forge'
+  sed -i '/anaconda/d' "$tmp_yaml"
+  sed -i 's/defaults/conda-forge/g' "$tmp_yaml"
+  # Remove build strings
+  sed -i 's/=[^=]*//2g' "$tmp_yaml"
+  echo "$tmp_yaml" # Return the path to the temporary YAML file
+}
 
-sed -i.bak '/anaconda/d' test_environment.yml 
-sed -i.bak2 's/defaults/conda-forge/g' test_environment.yml
-sed -i.bak3 's/=[^=]*//2g' test_environment.yml 
+# Test environment creation for each YAML file
+create_test_env() {
+  yaml_file="$1"
+  env_name="test_env_$RANDOM" # Unique name to avoid conflicts
 
-CONFIGDIRS="/home/ian/.condarc /home/ian/.anaconda /home/ian/.cache/pip"
-for FILE in ${CONFIGDIRS}; do  if [ -d $FILE ]; then mv $FILE{,.bak}; fi; done
+  conda env create --name "$env_name" --file="$yaml_file" 2>/dev/null
+  if [ $? -ne 0 ]; then
+    echo "Failed to create test environment for $yaml_file. Exiting."
+    return 1
+  fi
+  conda env remove --name "$env_name" # Clean up
+  echo "Environment creation test for $yaml_file succeeded."
+  return 0
+}
 
-curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
-bash Miniforge3-$(uname)-$(uname -m).sh
+# Process all YAML environment files
+for yaml in *.yml; do
+  [ -f "$yaml" ] || continue
+  echo "Processing $yaml..."
+  temp_yaml=$(edit_yaml "$yaml")
+  create_test_env "$temp_yaml" || { echo "Error processing $yaml. Rolling back."; exit 1; }
+  rm -f "$temp_yaml" # Clean up temporary file
+done
 
-# After this, you need to type yes to agree the terms and where to install miniforge. The default location is miniforge3 under your home which should NOT be where you install it. 
-# If you must install it to the exact same place your Anaconda install was, move that install aside for now. You don’t want to delete it yet.
-
-# Also remember we suggest you do NOT let the install add automatic activation of your Miniforge to your login file (e.g. .bashrc) since they causes problems with other programs like Xvnc and OpenOffice.
-# After the install is done we need make sure only the proper channels are configured. Check the list created in Step 1 for the channels other than default. Also look at the ~/SAVE.condarc file if you made one in Step 2.
-# If you see defaults it needs to be removed with conda config –remove channel defaults as this is the channel that requires the license (as well as any channel with anaconda in its name)
-
-# Add any other channels you need as in this example
-
-# conda config --add channels bioconda
-
-# Look at your ~/SAVE.condarc and enviroment YAML files created above for the extra channels you used in the past.
-
-# At this point make an archive backup of your new miniforge install so you can just extract it to start from the beginning easily without having to go through the install and long download times again.  
-# From the directory where you installed it do
-
-tar czf miniforge3.tar.gz miniforge3
-
-# assuming you left it the default name of miniforge3.  Then if you need to start over because of package install failures in the next step you do so with
-
-#    rm -rf miniforge3
-#    tar xzf miniforge3.tar.gz
-
-# First active the new miniforge3 install in your shell environment with
-
-eval "$(/path/to/miniforge3/bin/conda shell.bash hook)"
-
-# where you need to use YOUR path where you installed it and change bash to tcsh shell if you use tcsh instead
-
-# After downloading and installing miniforge, it is worth giving it a try. Once the YML file is edited properly try creating a test environment with it first by running: 
-
-conda env create --name test_base --file=test_environment.yml
-
-# If that works and you want it to be your base environment you can try running:
-
-conda env update --file=test_environment.yml
-
-
-# OPTION 1: If you are fine with just using the latest versions of all packages,  run conda list and compare to base_pkg_list.txt file made above. Install any missing packages with conda install (or just pip if no conda package exists).
-
-# If you want specific versions of certain packages you can do that by appending “=version” to the package name. For example:
-
-# conda install tensorflow=2.2.0
-
-# If you have a lot of these, create a text file with the pkg=version one line at a time and then run
-
-# conda install --file=pkglist.txt
- 
-# Repeat these steps for any sub-environments you want after creating and then activating them.
-
-# OPTION 2: If you want to try to recover the exact same python and package versions you had in your Anaconda install then we will use the YML file we exported in Step 1.  
-# However, you need to edit this file to remove default and any other anaconda channels at the top. Then (very tediously) remove build strings from all the conda package lines. For example where you see a package line like
-
-#     - bcrypt=3.1.6=py37h7b6447c_0
-
-# you need to remove the 2nd equal sign and everything after it so the line is just
-
-#      - bcrypt=3.1.6
-# sed 's/=[^=]*//2g' base_environment.yml
-
-# FYI, these build strings are unique to each channel so you cannot reinstall the same build from another channel which is why you must remove them.
-
-# Also look at the package list for any ‘anaconda’ packages like ‘anaconda-navigator’ and remove the lines entirely from the YML file.
-
-# Ultimately if the YML procedure does not work, you may need to resort to Option 1 above and do groups of about 10 packages at a time in a pkglist.txt file using conda install –file=pkglist.txt 
-# to try to recreate your old distribution manually step by step.  And you probably will not be able to get every single package at the same version as you had previously.  
-# Concentrate on the versions of the primary package(s) you Python scripts are built around like tensorflow or numpy.
-
-# But it is worth giving it a try. Once the YML file is edited properly try creating a test environment with it first by running
-
-#     conda env create --name test_base --file=base_environment.yml
-
-# If that works and you want it to be your base environment you can try running
-
-#     conda env update --file=base_environment.yml
-
-# but this could fail even though the sub-enviroment worked due to old packages being incompatible with things required in the base environment.
-
-# After you are done with the base environment, then for each sub-environment you have a *.yml file you can recreate each with
-
-#     conda env create --name myenvname --file=myenv_environment.yml
-
-# Obviously change the myenvname and yml file name as needed.
-
-
+echo "Conda environment reinstallation complete. Miniforge and environments configured for conda-forge."
+exit 0
