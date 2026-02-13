@@ -912,6 +912,8 @@ Pixi
 ''''''''''
 Pixi is a fast and modern package manager that handles the same types of environments as Miniforge. It includes other features, but one of its main functions is to act as a package manager for conda environments. A new installation includes conda-forge as the default channel. Like Miniforge, it includes support for other conda channels, pip, etc.
 
+A guide to migrating from anaconda is available at the Pixi site here: https://pixi.prefix.dev/latest/switching_from/conda/
+
 R and Anaconda
 ''''''''''''''
 
