@@ -33,7 +33,7 @@ html_static_path = ['_static']
 # -- Options for LaTeX output ------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-latex-output
 
-latex_theme = 'manual'
+latex_theme = 'howto'
 latex_show_urls = 'footnote'
 latex_elements = {
     # See https://www.sphinx-doc.org/en/master/latex.html#module-latex
@@ -42,20 +42,14 @@ latex_elements = {
     'pointsize': '11pt',
 }
 
-# This is to generate individual PDF files (as well as the default joint one)
+# Build the white paper as a single, standalone PDF using the 'howto'
+# (article) document class. This avoids the book-style title page, blank
+# verso pages, and "CONTENTS:" running headers produced by the 'manual'
+# class, and keeps the FAQ as a separate document (not bundled in).
 pdf_title_tex = 'Addressing the Challenges Posed by {A}naconda’s New Licensing Model'
 latex_documents = [
     # ('source_file', 'target_tex_file', 'Document Title', 'Author', 'Document Class', [toctree_only]),
-    # Combined A+B+FAQ (this is the default when 'latex_documents' not given)
-    ('index', 'carcc-anaconda_transtion.tex', pdf_title_tex, author_tex, 'manual'),
-
-    ('PaperA_users-researchers/White-paper-to-users-researchers',
-     'anaconda_transition-for-users-researchers.tex',
-     f"{pdf_title_tex}: For Users, Researchers and System Administrators", author_tex, 'howto'),
-
-    ('PaperB_institutional-leadership/White-paper-to-institutional-leadership',
-     'anaconda_transition-for-leadership.tex',
-     f"{pdf_title_tex}: For Institutional Leadership", author_tex, 'howto'),
-
-    ('FAQ/FAQs', 'FAQ.tex', f"{pdf_title_tex}: FAQ", author_tex, 'howto'),
+    ('WhitePaper/White-paper-to-community',
+     'carcc-anaconda_transtion.tex',
+     pdf_title_tex, author_tex, 'howto'),
 ]
