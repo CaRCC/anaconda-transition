@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'CaRCC Anaconda transtion'
-copyright = '2025, CaRCC Anaconda transtion working group'
-author = 'CaRCC Anaconda transtion working group'
-author_tex = '{CaRCC} {A}naconda {T}ranstion {W}orking {G}roup'
+project = 'CaRCC Anaconda Transition'
+copyright = '2026, CaRCC Anaconda Transition working group'
+author = 'CaRCC Anaconda Transition working group'
+author_tex = '{CaRCC} {A}naconda {T}ransition {W}orking {G}roup'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -50,6 +50,6 @@ pdf_title_tex = 'Addressing the Challenges Posed by {A}naconda’s New Licensing
 latex_documents = [
     # ('source_file', 'target_tex_file', 'Document Title', 'Author', 'Document Class', [toctree_only]),
     ('WhitePaper/White-paper-to-community',
-     'carcc-anaconda_transtion.tex',
+     'carcc-anaconda-transition.tex',
      pdf_title_tex, author_tex, 'howto'),
 ]
