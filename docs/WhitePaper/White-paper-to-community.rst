@@ -111,7 +111,7 @@ created significant uncertainty across academic communities that have
 historically relied upon Anaconda for their academic and research work,
 particularly regarding compliance scope and budget exposure.
 
-In September 2024, a few months after the aforementioned changes to the TOS, a `blog post
+In September 2024, a few months after the aforementioned changes to the ToS, a `blog post
 <https://www.anaconda.com/blog/update-on-anacondas-terms-of-service-for-academia-and-research>`__
 was published to clarify the intent of the update to the
 community. This blog post seemed to suggest that Anaconda would remain
@@ -177,7 +177,7 @@ company is subject to the licensing restrictions described in the ToS. Additiona
 (FOSS) under the 3-clause Berkeley Software Distribution (`BSD-3-Clause
 <https://opensource.org/license/bsd-3-clause>`__) license that is widely
 used in the Anaconda Distribution, Miniconda, and Miniforge installers. At the time, the primary issues associated
-with the changes in the TOS included, but were not limited to:
+with the changes in the ToS included, but were not limited to:
 
 -  Licensing Costs: It appeared that institutions with more than 200
    employees would need to pay for a commercial license to use Anaconda.
@@ -215,7 +215,7 @@ To address these challenges, ATWG had initiated several actions:
    as Miniforge, and utilizing package managers like `Mamba
    <https://mamba.readthedocs.io/en/latest/>`__, `Pip
    <https://packaging.python.org/en/latest/key_projects/#pip>`__,
-   `Pixi <https://pixi.prefix.dev/latest/>`__, and/or `UV
+   `Pixi <https://pixi.prefix.dev/latest/>`__, and/or `uv
    <https://docs.astral.sh/uv/>`__. Additionally, containerization
    platforms like `Singularity/Apptainer
    <https://apptainer.org/docs/user/latest/>`__ or `Docker
@@ -267,7 +267,7 @@ organizations faced a range of practical and financial challenges:
 
 5. Complications for Collaboration
 
-   In multi-institution projects — such as DoE lab partnerships or
+   In multi-institution projects — such as DOE lab partnerships or
    interdisciplinary centers — a fragmented licensing landscape could
    force collaborators onto different package ecosystems, undermining
    shared environment files, container images, and joint development
@@ -722,7 +722,7 @@ compatible CLI, with minor differences). Both support channels like `conda-forge
 <https://github.com/conda-forge>`__ and `Anaconda’s defaults
 <https://www.anaconda.com/docs/getting-started/working-with-conda/reference/default-channels>`__. The
 use of Anaconda Inc.’s defaults channels is subjected to `Anaconda
-Inc.’s TOS <https://www.anaconda.com/legal/terms/terms-of-service>`__.
+Inc.’s ToS <https://www.anaconda.com/legal/terms/terms-of-service>`__.
 
 Conda is written in python and Mamba is written C/C++ and has a faster
 dependency resolution as it uses `libsolv
@@ -1025,7 +1025,7 @@ Pixi
 ----
 Pixi is a fast and modern package manager that handles the same types of environments as Miniforge. It includes other features, but one of its main functions is to act as a package manager for conda environments. A new installation includes conda-forge as the default channel. Like Miniforge, it includes support for other conda channels, pip, etc.
 
-A guide to migrating from anaconda is available at the Pixi site here: https://pixi.prefix.dev/latest/switching_from/conda/
+A guide to migrating from Anaconda is available at the Pixi site here: https://pixi.prefix.dev/latest/switching_from/conda/
 
 R and Anaconda
 --------------
@@ -1078,7 +1078,7 @@ Spack
 -----
 
 Spack is an HPC-centric package manager created at Lawrence Livermore
-National Laboratory (LLNL) under U.S. Department of Energy (DoE)
+National Laboratory (LLNL) under U.S. Department of Energy (DOE)
 sponsorship, which allows users to instantiate one or
 more instances of itself, each of which can compile the whole world
 all the way down the dependency tree. This satisfies the need for
