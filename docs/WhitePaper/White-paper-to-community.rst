@@ -104,7 +104,7 @@ imply that it would no longer support free access to their base
 distribution or their *defaults* channel for organizations with more
 than 200 employees, raising concerns that large academic and research
 institutions could be affected. The `reason
-<https://www.anaconda.com/pricing/terms-of-service-faqs>`__ for
+<https://web.archive.org/web/20240905131946/https://www.anaconda.com/pricing/terms-of-service-faqs>`__ for
 updating their ToS was to offset the significant costs associated with
 maintaining and hosting their platform and services. But this update
 created significant uncertainty across academic communities that have
