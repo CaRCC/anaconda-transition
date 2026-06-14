@@ -494,21 +494,27 @@ for policy development and review may include:
 
 Institutions operating a secure environment cluster would need to
 evaluate the security level of their cluster to decide whether the
-purchase of Anaconda's distribution is warranted or not. For example,
-any cluster that is required to ensure privacy and security at
-federally recognized standards, such as NIST 800-53 and NIST 800-171,
-must have Anaconda's distribution available on the cluster instead of
-utilizing open-source alternatives. This is because the open-source
-alternatives, listed below, are not guaranteed to be compliant with
-security standards needed for regulated data and could compromise a
-secure environment cluster. For such regulated or high-security
-deployments, Anaconda Inc.'s `Anaconda Business
-<https://www.anaconda.com/guides/the-ultimate-guide-to-open-source-security-with-python-and-r#:~:text=Anaconda%20Business%20is%20an%20enterprise%2Dgrade%20package%20repository,do%20not%20comply%20with%20your%20legal%20requirements.>`__
-offering provides an enterprise-grade package repository with verified
-provenance and may be worth evaluating. On the other hand, most clusters with
-requirements of housing sensitive datasets with Data Usage Agreement
-(DUA) and/or IRB's could still utilize alternative methods, mentioned
-below, for installing packages.
+purchase of Anaconda's distribution is warranted. For example, a
+cluster that must meet federally recognized security standards such as
+NIST 800-53 or NIST 800-171 is subject to supply-chain and
+system-integrity requirements — for instance, maintaining a supply-chain
+risk management plan, documenting and verifying component provenance,
+and identifying and remediating known vulnerabilities. These standards
+specify functional and process outcomes rather than mandating any
+particular vendor or product, and can be met with a controlled internal
+mirror, transparently built channels such as conda-forge, and SBOM and
+vulnerability scanning combined with documented review processes.
+Meeting them with purely open-source tooling does, however, place the
+burden of provenance documentation, vulnerability triage, and support
+on the institution. For such regulated or high-security deployments,
+institutions should evaluate whether a commercial offering with built-in
+provenance, auditing, and vendor support — such as Anaconda Inc.'s
+`Anaconda Business
+<https://www.anaconda.com/guides/the-ultimate-guide-to-open-source-security-with-python-and-r#:~:text=Anaconda%20Business%20is%20an%20enterprise%2Dgrade%20package%20repository,do%20not%20comply%20with%20your%20legal%20requirements.>`__,
+an enterprise-grade package repository — better fits their compliance
+and operational needs. Most clusters housing sensitive datasets under a
+Data Usage Agreement (DUA) and/or IRB approval can still use the
+alternative methods mentioned below for installing packages.
 
 Keeping all of the above in mind, some of the key questions that still
 remain unanswered are:
