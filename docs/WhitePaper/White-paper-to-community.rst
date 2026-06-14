@@ -33,7 +33,7 @@ Executive Summary
 
 When Anaconda Inc. introduced its revised Terms of Service (ToS) in
 March 2024, the changes created immediate uncertainty for academic
-research computing. For years, Anaconda’s Python distribution and
+research computing. For years, Anaconda's Python distribution and
 package-management platform had been freely available for academic
 use—both on local systems and across HPC clusters—serving as the
 foundation for scientific workflows in many departments. Institutions
@@ -121,7 +121,7 @@ update was forthcoming by the year-end. The Community Repository on
 `anaconda.org <https://anaconda.org>`__ is free to use for installing
 and updating packages from community channels like conda-forge, but
 certain mirrored channels (main, r, msys2, anaconda) remain subject to
-`Anaconda’s Terms of Service
+`Anaconda's Terms of Service
 <https://www.anaconda.com/legal/terms/terms-of-service>`__. The
 Anaconda Repository at `repo.anaconda.com
 <https://repo.anaconda.com/>`__ is also free for individuals,
@@ -315,7 +315,7 @@ academic institutions qualify for free use regardless of size; the
 200-employee threshold for paid licenses applies to for-profit
 (commercial) organizations, not to universities. However, it is important to note that paid
 licenses may be required for specific use cases within academic
-settings, such as embedding Anaconda’s products, mirroring them, or
+settings, such as embedding Anaconda's products, mirroring them, or
 providing third-party access beyond standard educational use.
 
 In order to access the academic account one needs to be either
@@ -699,7 +699,7 @@ together. This is not a complete list but is a good starting point
 should an insitution or a research team decide to go the open-source
 route. Some of the solutions do not represent a full alternative to Anaconda.
 
-- Conda (the BSD-3-Clause package manager behind Anaconda; fully open-source). Miniconda (a minimal Anaconda installer that defaults to Anaconda’s repository, so reconfigure it to conda-forge or another community channel to stay outside the Terms of Service)
+- Conda (the BSD-3-Clause package manager behind Anaconda; fully open-source). Miniconda (a minimal Anaconda installer that defaults to Anaconda's repository, so reconfigure it to conda-forge or another community channel to stay outside the Terms of Service)
 - Miniforge (pulls from conda-forge by default; Mambaforge was deprecated in July 2024)
 - Mamba (drop-in replacement for Conda written in C++, bundled with Miniforge since version 23.3.1)
 - Pixi (Rust-based package, environment, and project manager with seamless mixing of PyPI + Conda packages, conda-forge by default)
@@ -719,10 +719,10 @@ Conda vs Mamba
 command-line tools, they can be used mostly interchangeably as Mamba
 was created as a drop-in replacement for Conda (with a largely
 compatible CLI, with minor differences). Both support channels like `conda-forge
-<https://github.com/conda-forge>`__ and `Anaconda’s defaults
+<https://github.com/conda-forge>`__ and `Anaconda's defaults
 <https://www.anaconda.com/docs/getting-started/working-with-conda/reference/default-channels>`__. The
-use of Anaconda Inc.’s defaults channels is subjected to `Anaconda
-Inc.’s ToS <https://www.anaconda.com/legal/terms/terms-of-service>`__.
+use of Anaconda Inc.'s defaults channels is subjected to `Anaconda
+Inc.'s ToS <https://www.anaconda.com/legal/terms/terms-of-service>`__.
 
 Conda is written in python and Mamba is written C/C++ and has a faster
 dependency resolution as it uses `libsolv
@@ -750,9 +750,9 @@ libraries.
 
 There are numerous permutations of these tools for installers
 available that include different combinations of the components
-described here. These include “micromamba” (a standalone static
+described here. These include "micromamba" (a standalone static
 binary that needs no base environment) and the now-deprecated
-“mambaforge”.
+"mambaforge".
 
 
 Conda vs Miniforge and alternate conda package channels
@@ -811,9 +811,9 @@ Additional recommendations if using conda-forge
   https://conda-forge.org/download/ for this option. The downside of
   Miniforge is that unlike the standard Anaconda distribution, Miniforge does
   not create a rich "base" environment with 300+ packages to get you
-  started. Rather, Miniforge’s “base” environment is intentionally
+  started. Rather, Miniforge's "base" environment is intentionally
   minimalistic and is meant to serve the functionality of the
-  installer itself.  You will then need to either populate this “base”
+  installer itself.  You will then need to either populate this "base"
   environment with packages of your choice, or to create additional
   conda environment(s) and specify which packages you want to use.
   The command would look something like:
@@ -889,11 +889,11 @@ Comparison: Conda vs pip:
 Virtual environments in Python
 ------------------------------
 
-Virtual environments can be created via `Python’s venv module
+Virtual environments can be created via `Python's venv module
 <https://docs.python.org/3/library/venv.html>`__, for convenience
 users may opt to store such environments in a centralized directory,
 conventionally named: `$HOME/.virtualenvs`, or in a directory within a
-user’s project directory, conventionally named: `.venv` or `venv`,
+user's project directory, conventionally named: `.venv` or `venv`,
 (see also: `Install packages in a virtual environment using pip and
 venv
 <https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments>`):
