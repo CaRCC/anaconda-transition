@@ -80,8 +80,9 @@ renewed annually — and are held responsible for ensuring all users comply with
 the terms. Key risk areas include restrictions on embedding Anaconda packages
 in containers, mirroring repositories, and providing access to third parties
 (e.g., external collaborators), all of which may require a paid license even
-under the academic exemption. The terms can be modified with as little as 90
-days' notice, and it falls to the institution to monitor for changes. Given
+under the academic exemption. The terms can be modified with ninety days' notice, posted to
+Anaconda's legal page, and it falls to the institution to monitor for
+those changes. Given
 this evolving landscape, the working group recommends that institutions evaluate
 open-source alternatives (such as Miniforge with conda-forge) to reduce
 compliance exposure, while engaging with peer institutions through `CaRCC
