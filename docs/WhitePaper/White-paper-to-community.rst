@@ -172,11 +172,10 @@ package distribution channels.
 According to the updated ToS, downloading the distribution is covered
 by the ToS. However, the Anaconda channel that is maintained by the
 company is subject to the licensing restrictions described in the ToS. Additionally, "conda" and its `repository
-<https://github.com/conda/conda>`__ is a Free and Open-Source Software
-(FOSS) with Berkley Source Distribution (`BSD
-<https://www.techtarget.com/whatis/definition/BSD-licenses#:~:text=As%20a%20low%20restriction%20and,was%20first%20written%20in%201969.>`__)
-license that is widely used in the Anaconda Distribution, Miniconda,
-and Miniforge installers. At the time, the primary issues associated
+<https://github.com/conda/conda>`__ is Free and Open-Source Software
+(FOSS) under the 3-clause Berkeley Software Distribution (`BSD-3-Clause
+<https://opensource.org/license/bsd-3-clause>`__) license that is widely
+used in the Anaconda Distribution, Miniconda, and Miniforge installers. At the time, the primary issues associated
 with the changes in the TOS included, but were not limited to:
 
 -  Licensing Costs: It appeared that institutions with more than 200
