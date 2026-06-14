@@ -105,10 +105,10 @@ than 200 employees, raising concerns that large academic and research
 institutions could be affected. The `reason
 <https://www.anaconda.com/pricing/terms-of-service-faqs>`__ for
 updating their ToS was to offset the significant costs associated with
-maintaining and hosting their platform and services. But, this update
-caused tremendous confusion and anxiety across academic communities
-that have historically relied upon Anaconda for their academic and
-research work.
+maintaining and hosting their platform and services. But this update
+created significant uncertainty across academic communities that have
+historically relied upon Anaconda for their academic and research work,
+particularly regarding compliance scope and budget exposure.
 
 In September 2024, a few months after the aforementioned changes to the TOS, a `blog post
 <https://www.anaconda.com/blog/update-on-anacondas-terms-of-service-for-academia-and-research>`__
@@ -180,10 +180,10 @@ with the changes in the TOS included, but were not limited to:
 
 -  Licensing Costs: It appeared that institutions with more than 200
    employees would need to pay for a commercial license to use Anaconda.
--  Compliance: Institutions were receiving notices from Anaconda about
-   non-compliance with the new ToS. See `Anaconda puts the squeeze on
-   data scientists • The
-   Register <https://www.theregister.com/2024/08/08/anaconda_puts_the_squeeze_on/>`__.
+-  Compliance: Some institutions reported receiving notices from
+   Anaconda asserting non-compliance with the new ToS, in some cases
+   with warnings of back-billing for prior usage (as reported by `The
+   Register <https://www.theregister.com/2024/08/08/anaconda_puts_the_squeeze_on/>`__).
 -  Heavy Dependence: Academic institutions contribute significantly to
    open-source software used within Anaconda. Based on the above, it
    was feared that any institution with more than 200 employees,
@@ -191,7 +191,7 @@ with the changes in the TOS included, but were not limited to:
 -  Budget Constraints: Many institutions and researchers operate under
    tight budgets, even more so now than ever, that do not account for
    unexpected licensing costs.
--  Operational Challenges: The sudden implementation of these changes
+-  Operational Challenges: The implementation of these changes
    has disrupted workflows, requiring rapid reassessment of how
    institutions and research computing teams should manage software
    environments.
@@ -228,7 +228,7 @@ Impact on Academic Institutions
 ===============================
 
 At the time of Anaconda's updates-to-ToS announcement, academic
-organizations faced a cascade of practical and financial hurdles:
+organizations faced a range of practical and financial challenges:
 
 1. Escalating Licensing Costs
 
@@ -346,11 +346,11 @@ an out-of-compliance case and when would a license be required, the
 ATWG has decided to come up with a number of recommendations for the
 academic community that rely upon alternative methods to achieve what
 can be accomplished with Anaconda distribution. Additionally, ATWG
-strongly feels that the campus research computing teams should not be
-expected to police the academic community in how Anaconda
-Inc. products are being utilized, by user(s), once the distribution
-has been installed on academic and research clusters in full
-compliance with Anaconda Inc.'s policies for academia. Hence, having
+holds that campus research computing teams should not be expected to
+monitor or enforce individual end-user behavior in how Anaconda
+Inc. products are used, once the distribution has been installed on
+academic and research clusters in compliance with Anaconda Inc.'s
+policies for academia. Hence, having
 alternative solutions would help the research community decide, in an
 informed manner, on how to proceed with package management.
 
