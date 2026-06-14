@@ -864,7 +864,7 @@ configuration as was done in the above example.
 Overview Conda vs Pip
 ---------------------
 
-Many projects are now putting effort into creating wheels that allows for an easy installation of packages (e.g., scipy, torch, kafka, etc.) across many Linux distributions (see for example: `Building manylinux Python wheels <https://opensource.com/article/19/2/manylinux-python-wheels>`__)>
+Many projects are now putting effort into creating wheels that allows for an easy installation of packages (e.g., scipy, torch, kafka, etc.) across many Linux distributions (see `PEP 600 <https://peps.python.org/pep-0600/>`__ and the `pypa/manylinux <https://github.com/pypa/manylinux>`__ project)
 	       
 
 Pip is appropriate for:
@@ -878,11 +878,11 @@ Comparison: Conda vs pip:
 +-------------------+------------------------------------+-------------------+
 |                   | pip                                | conda             |
 +-------------------+------------------------------------+-------------------+
-| Installs Packages | Wheel or source/requires compilers | Binaries/compiled |
+| Installs Packages | Wheels (binary) or source          | Binaries/compiled |
 +-------------------+------------------------------------+-------------------+
 | Used for          | Python                             | Multiple languages|
 +-------------------+------------------------------------+-------------------+
-| Dependency check  | Some                               | Yes               |
+| Dependency check  | Yes                                | Yes               |
 +-------------------+------------------------------------+-------------------+
 
 
