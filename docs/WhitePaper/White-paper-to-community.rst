@@ -449,6 +449,11 @@ lack of thereof.
    audits, particularly when dealing with government-funded research or
    grants, and failing to demonstrate compliance with software licensing
    requirements can result in penalties or reputational damage.
+   Anaconda's Terms of Service reinforce this exposure: customers must
+   retain usage records for the duration of the subscription term and for
+   twelve months after it ends, must provide them on request to confirm
+   compliance, and may be charged for any excess users at Anaconda's
+   then-current pricing.
 
 
 **2. Potential Legal Implications:**
@@ -465,7 +470,7 @@ consequences, including:
 
 *Legal Disputes:*
    Institutions that inadvertently breach Anaconda's new licensing terms
-   may be subject to litigation. While legal action might be rare, even the
+   could face contractual demands and, in principle, litigation. While legal action might be rare, even the
    risk of potential lawsuits can cause significant disruptions and
    reputational harm to an institution, which is particularly concerning
    for publicly-funded research.
