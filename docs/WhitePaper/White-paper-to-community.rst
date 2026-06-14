@@ -345,12 +345,13 @@ that there is a fair amount of ambiguity in what would constitute as
 an out-of-compliance case and when would a license be required, the
 ATWG has decided to come up with a number of recommendations for the
 academic community that rely upon alternative methods to achieve what
-can be accomplished with Anaconda distribution. Additionally, ATWG
-holds that campus research computing teams should not be expected to
-monitor or enforce individual end-user behavior in how Anaconda
-Inc. products are used, once the distribution has been installed on
-academic and research clusters in compliance with Anaconda Inc.'s
-policies for academia. Hence, having
+can be accomplished with Anaconda distribution. Additionally, while Anaconda Inc.'s Terms of Service hold the accepting
+institution responsible for ensuring its users comply with those Terms
+and for any violations by those users, ATWG holds that, as a practical
+matter, campus research computing teams are not well positioned to
+continuously monitor or enforce individual end-user behavior in how
+Anaconda Inc. products are used on shared academic and research
+clusters. Hence, having
 alternative solutions would help the research community decide, in an
 informed manner, on how to proceed with package management.
 
