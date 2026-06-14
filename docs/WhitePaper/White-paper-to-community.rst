@@ -553,25 +553,33 @@ to include alternative open-source environments and the necessary
 software packages, eliminating the need for the Anaconda distribution.
 
 Anaconda Inc.'s `Terms of
-Service <https://www.anaconda.com/legal/terms/terms-of-service>`__ (as
-of August 29, 2025) prevent "embedding" ("incorporating Anaconda Content
-into another product or service") and prevent "distribut[ing] the
-Platform or any Offering to anyone other than your Users." Anaconda
-Inc.'s `Academic
-Policy <https://www.anaconda.com/legal/terms/academic>`__ (as of August
-29, 2025) attempts to modify these restrictions slightly, allowing one
-"to redistribute system outputs solely for academic purpose," though
-it's not clear what they mean by "system outputs."
+Service <https://www.anaconda.com/legal/terms/terms-of-service>`__
+(effective July 15, 2025; accessed August 29, 2025) prevent "embedding"
+("incorporating Anaconda Content into another product or service as a
+built-in component or continually updating dependency of a larger
+software application") and prevent "distribut[ing] the Platform or any
+Offering to anyone other than your Users." The same definition adds a
+carve-out: "Embedding does not include providing services or processing
+data for third parties, as long as the third party does not interact
+with the Anaconda Offering." Anaconda Inc.'s `Academic
+Policy <https://www.anaconda.com/legal/terms/academic>`__ (effective
+July 14, 2025; accessed August 29, 2025) creates a limited exemption
+from these restrictions, allowing one "to redistribute system outputs
+solely for academic purposes," though the term "system outputs" is not
+defined in either the Terms of Service or the Academic Policy.
 
 Our concern with these restrictions is a common use-case of a researcher
 creating a Docker (or Singularity/Apptainer) Container to share their
 code and/or workflows with other researchers, possibly at other academic
 institutions. If that researcher includes Anaconda Inc. packages within
 the container image, it could be considered "embedding," which is not
-allowed; sharing that container with others outside their own
-Institution would certainly seem to count as "distribution". It is
-unclear if a Container image would be considered as "system outputs" so
-sharing one might not be allowed outside the originating Institution.
+allowed; the embedding carve-out does not appear to help here, since a
+researcher who receives the container interacts with the bundled
+Anaconda Content directly. Sharing that container with others outside
+their own Institution would appear to count as "distribution". Whether a
+Container image qualifies as "system outputs" — and is therefore covered
+by the Academic Policy's distribution exemption — is unclear, so sharing
+one might not be allowed outside the originating Institution.
 
 The only solution we see in this case is to make sure that the
 restricted Anaconda Inc. packages are not included in any Containers.
