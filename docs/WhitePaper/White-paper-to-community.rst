@@ -100,8 +100,9 @@ automatically installing packages and interfacing with AI and other
 package-based technologies. However, in March 2024, Anaconda
 Inc. updated its `ToS <https://legal.anaconda.com/policies/en/>`__ to
 imply that it would no longer support free access to their base
-distribution or their *defaults* channel for non-commercial academic
-research institutions with more than 200 employees. The `reason
+distribution or their *defaults* channel for organizations with more
+than 200 employees, raising concerns that large academic and research
+institutions could be affected. The `reason
 <https://www.anaconda.com/pricing/terms-of-service-faqs>`__ for
 updating their ToS was to offset the significant costs associated with
 maintaining and hosting their platform and services. But, this update
@@ -178,16 +179,16 @@ license that is widely used in the Anaconda Distribution, Miniconda,
 and Miniforge installers. At the time, the primary issues associated
 with the changes in the TOS included, but were not limited to:
 
--  Licensing Costs: Institutions with more than 200 employees must now
-   pay for a commercial license to use Anaconda.
+-  Licensing Costs: It appeared that institutions with more than 200
+   employees would need to pay for a commercial license to use Anaconda.
 -  Compliance: Institutions were receiving notices from Anaconda about
    non-compliance with the new ToS. See `Anaconda puts the squeeze on
    data scientists • The
    Register <https://www.theregister.com/2024/08/08/anaconda_puts_the_squeeze_on/>`__.
 -  Heavy Dependence: Academic institutions contribute significantly to
-   open-source software used within Anaconda. Based on the above, any
-   institution with more than 200 employees will now be required to pay
-   for access.
+   open-source software used within Anaconda. Based on the above, it
+   was feared that any institution with more than 200 employees,
+   including universities, would be required to pay for access.
 -  Budget Constraints: Many institutions and researchers operate under
    tight budgets, even more so now than ever, that do not account for
    unexpected licensing costs.
@@ -309,10 +310,10 @@ universities to purchase a commercial fee license for their installers
 or for access to their `package
 repository <https://repo.anaconda.com/>`__, regardless of their size,
 when used in course curricula, including teaching, learning, and
-research at accredited educational institutions worldwide. The policy
-is applicable to universities with 200 or more employees and the
-200-employee threshold for paid licenses primarily applies to
-commercial organizations. However, it is important to note that paid
+research at accredited educational institutions worldwide. Accredited
+academic institutions qualify for free use regardless of size; the
+200-employee threshold for paid licenses applies to for-profit
+(commercial) organizations, not to universities. However, it is important to note that paid
 licenses may be required for specific use cases within academic
 settings, such as embedding Anaconda’s products, mirroring them, or
 providing third-party access beyond standard educational use.
