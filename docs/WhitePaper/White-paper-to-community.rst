@@ -411,13 +411,20 @@ redistribution of system outputs, which is permitted only within the
 scope of non-commercial, educational use under the Academic Policy.
 
 Anaconda reserves the right to verify the institution's eligibility for
-the Anaconda for Education Program and the access to this program's
-benefits are valid for twelve months from the signing of the EAI
-Agreement. Once the duration is expired, the agreement must be renewed
-to continue accessing the benefits.
+the Anaconda for Education Program, and access to this program's
+benefits is valid for twelve months from the signing of the EAI
+Agreement (or, for an individual participant, from signing the Academic
+End User License Agreement). Once that period expires, the agreement
+must be renewed to continue accessing the benefits; renewal requires
+Anaconda to re-verify eligibility and the participants to re-sign their
+agreements. The institution must also report any material change that
+may affect its eligibility to Anaconda within thirty (30) days of such
+change.
 
-Additionally, Anaconda extends the participation in this program to
-individuals as long as they are associated with an EAI. However,
+Additionally, Anaconda extends participation in this program to
+individuals associated with an EAI, provided each participating
+individual signs the Anaconda Academic End User License Agreement.
+However,
 according to their current `Terms of
 Service <https://www.anaconda.com/legal/terms/terms-of-service>`__,
 section 5, the institution would be responsible for ensuring that all
