@@ -32,7 +32,7 @@ Executive Summary
 =================
 
 When Anaconda Inc. introduced its revised Terms of Service (ToS) in
-Spring 2024, the changes created immediate uncertainty for academic
+March 2024, the changes created immediate uncertainty for academic
 research computing. For years, Anaconda’s Python distribution and
 package‑management platform had been freely available for academic
 use—both on local systems and across HPC clusters—serving as the
@@ -71,7 +71,7 @@ For Institutional Leadership
 ----------------------------
 
 Anaconda Inc.'s revised `Terms of Service
-<https://www.anaconda.com/legal/terms/terms-of-service>`__, effective July
+<https://www.anaconda.com/legal/terms/terms-of-service>`__, effective July 15,
 2025, introduce new compliance obligations for academic institutions. While
 Anaconda remains free for accredited educational entities under their `Academic
 Policy <https://www.anaconda.com/legal/terms/academic>`__, institutions must
@@ -97,7 +97,7 @@ computing, offering a robust package management system and an
 ecosystem that simplifies the installation and maintenance of numerous
 open-source libraries. It is one of the most popular methods of
 automatically installing packages and interfacing with AI and other
-package-based technologies. However, in early 2024, Anaconda
+package-based technologies. However, in March 2024, Anaconda
 Inc. updated its `ToS <https://legal.anaconda.com/policies/en/>`__ to
 imply that it would no longer support free access to their base
 distribution or their *defaults* channel for non-commercial academic
