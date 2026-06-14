@@ -717,7 +717,7 @@ route. Some of the solutions do not represent a full alternative to Anaconda.
 Conda vs Mamba
 --------------
 
-`Conda <https://github.com/conda/conda>`__ and `Mamba`
+`Conda <https://github.com/conda/conda>`__ and `Mamba
 <https://github.com/mamba-org/mamba>`__ are package managers and
 command-line tools, they can be used mostly interchangeably as Mamba
 was created as a drop-in replacement for Conda (with a largely
@@ -899,7 +899,7 @@ conventionally named: `$HOME/.virtualenvs`, or in a directory within a
 user's project directory, conventionally named: `.venv` or `venv`,
 (see also: `Install packages in a virtual environment using pip and
 venv
-<https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments>`):
+<https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/>`__):
 
 .. code-block:: console
  
