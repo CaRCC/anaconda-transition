@@ -217,8 +217,8 @@ To address these challenges, ATWG had initiated several actions:
    <https://packaging.python.org/en/latest/key_projects/#pip>`__,
    `Pixi <https://pixi.sh/latest/>`__, and/or `UV
    <https://docs.astral.sh/uv/>`__. Additionally, containerization
-   platforms like `Singularity
-   <https://docs.sylabs.io/guides/latest/user-guide/>`__ or `Docker
+   platforms like `Singularity/Apptainer
+   <https://apptainer.org/docs/user/latest/>`__ or `Docker
    <https://www.docker.com/>`__ as possible alternatives to package
    management, as long as they employed open-source installers, and
    installing packages from scratch were explored.
