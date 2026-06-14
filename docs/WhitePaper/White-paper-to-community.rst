@@ -887,7 +887,7 @@ A limitation of the `venv` module is that a) it is only limited to
 Python packages, and b) it can only create virtual environments with a
 Python version as the one used to create the Python environment. Other
 tools exist to overcome the latter limitation, such as conda, mamba,
-Poetry/Pipenv and UV.
+Poetry/Pipenv and uv.
 
 Resources:
 ~~~~~~~~~~
@@ -922,6 +922,45 @@ packages came from:
 If you see any packages listed from "repo.anaconda.com", these fall
 under the Anaconda Terms of Service and may require a license for
 continued use.
+
+uv
+--
+uv is an extremely fast Python package and project manager, written in
+Rust and developed by Astral. It has rapidly gained adoption across the
+Python community as a single tool that replaces pip, pip-tools, pipx,
+virtualenv, and (for many workflows) pyenv and Poetry, offering
+substantially faster dependency resolution and installation. uv operates
+within the standard Python packaging ecosystem (PyPI and wheels) and can
+manage virtual environments, install packages, produce a universal
+cross-platform lockfile, and install and manage Python interpreter
+versions for unprivileged users. For projects whose dependencies are
+available as Python wheels, uv addresses the original motivation for
+reaching for Anaconda, namely materializing a specific Python and its
+dependencies on the local filesystem, without any reliance on Anaconda's
+channels or Terms of Service.
+
+uv does not, however, manage non-Python (binary) dependencies from conda
+channels the way conda-based tools do; it relies on PyPI wheels, which
+bundle their own compiled libraries. For workflows that genuinely require
+conda packages, a conda-compatible tool such as Pixi (described below)
+remains the better fit. Many researchers will find uv sufficient for
+pure-Python work and Pixi appropriate for the remainder; Pixi in fact
+uses uv internally to resolve and install PyPI dependencies, so the two
+can be complementary.
+
+Astral has also introduced `pyx <https://astral.sh/pyx>`__, a
+Python-native package registry (currently in beta) that serves as an
+optimized, uv-aware backend for PyPI and other public indexes. Of
+particular relevance to the secure-environment and compliance discussion,
+pyx can serve curated, pre-built wheels (including hardware-specific
+builds such as GPU/CUDA packages), enforce reproducible builds, and apply
+organizational compliance filters (for example by package age,
+popularity, or known vulnerabilities). Tooling of this kind points toward
+a path for institutions to obtain reliable, policy-compliant pre-built
+binaries without depending on Anaconda's distribution channels.
+
+A guide to getting started with uv is available at the Astral
+documentation site here: https://docs.astral.sh/uv/
 
 Pixi
 ----
