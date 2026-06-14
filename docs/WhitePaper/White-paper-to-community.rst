@@ -215,7 +215,7 @@ To address these challenges, ATWG had initiated several actions:
    as Miniforge, and utilizing package managers like `Mamba
    <https://mamba.readthedocs.io/en/latest/>`__, `Pip
    <https://packaging.python.org/en/latest/key_projects/#pip>`__,
-   `Pixi <https://pixi.sh/latest/>`__, and/or `UV
+   `Pixi <https://pixi.prefix.dev/latest/>`__, and/or `UV
    <https://docs.astral.sh/uv/>`__. Additionally, containerization
    platforms like `Singularity/Apptainer
    <https://apptainer.org/docs/user/latest/>`__ or `Docker
