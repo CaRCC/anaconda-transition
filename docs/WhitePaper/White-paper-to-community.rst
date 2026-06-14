@@ -99,7 +99,7 @@ ecosystem that simplifies the installation and maintenance of numerous
 open-source libraries. It is one of the most popular methods of
 automatically installing packages and interfacing with AI and other
 package-based technologies. However, in March 2024, Anaconda
-Inc. updated its `ToS <https://legal.anaconda.com/policies/en/>`__ to
+Inc. updated its `ToS <https://www.anaconda.com/legal/terms/terms-of-service>`__ to
 imply that it would no longer support free access to their base
 distribution or their *defaults* channel for organizations with more
 than 200 employees, raising concerns that large academic and research
@@ -150,7 +150,7 @@ community. The goals of the meetings included, but were not limited
 to:
 
 -  obtaining clarity on the `update to the
-   ToS <https://legal.anaconda.com/policies/en/>`__
+   ToS <https://www.anaconda.com/legal/terms/terms-of-service>`__
 -  the current status of proposed changes
 -  implications of the change on the larger community
 -  thoughts and suggestions on how to proceed
@@ -333,7 +333,7 @@ categories come with their own price packages except for academia,
 where the use is free as long as no embedding, mirroring, or access to
 a third party has been carried out for their products. However, they
 urge institutions to contact their `partner team
-<https://legal.anaconda.com/policies/en/>`__ at
+<https://www.anaconda.com/legal>`__ at
 partnerships@anaconda.com should the need to pursue an embedded use
 case arises in academia. This is different from what was mentioned in
 their archival FAQ from `August 13, 2024
@@ -722,7 +722,7 @@ compatible CLI, with minor differences). Both support channels like `conda-forge
 <https://github.com/conda-forge>`__ and `Anaconda’s defaults
 <https://www.anaconda.com/docs/getting-started/working-with-conda/reference/default-channels>`__. The
 use of Anaconda Inc.’s defaults channels is subjected to `Anaconda
-Inc.’s TOS <https://legal.anaconda.com/policies/en/>`__.
+Inc.’s TOS <https://www.anaconda.com/legal/terms/terms-of-service>`__.
 
 Conda is written in python and Mamba is written C/C++ and has a faster
 dependency resolution as it uses `libsolv
