@@ -3,3 +3,12 @@ venv
 *~
 _build
 .rd_notes.txt
+
+# Local agent scaffolding — kept out of version control so it never lands in an
+# upstream CaRCC PR. These drive the white-paper revision effort locally only.
+.agents/
+.claude/
+PLAN.md
+AGENTS.md
+CLAUDE.md
+EDITS.md
