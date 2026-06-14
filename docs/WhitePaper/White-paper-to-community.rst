@@ -101,7 +101,7 @@ automatically installing packages and interfacing with AI and other
 package-based technologies. However, in March 2024, Anaconda
 Inc. updated its `ToS <https://www.anaconda.com/legal/terms/terms-of-service>`__ to
 imply that it would no longer support free access to their base
-distribution or their *defaults* channel for organizations with more
+distribution or their "defaults" channel for organizations with more
 than 200 employees, raising concerns that large academic and research
 institutions could be affected. The `reason
 <https://web.archive.org/web/20240905131946/https://www.anaconda.com/pricing/terms-of-service-faqs>`__ for
@@ -721,7 +721,7 @@ was created as a drop-in replacement for Conda (with a largely
 compatible CLI, with minor differences). Both support channels like `conda-forge
 <https://github.com/conda-forge>`__ and `Anaconda's defaults
 <https://www.anaconda.com/docs/getting-started/working-with-conda/reference/default-channels>`__. The
-use of Anaconda Inc.'s defaults channels is subjected to `Anaconda
+use of Anaconda Inc.'s "defaults" channels is subjected to `Anaconda
 Inc.'s ToS <https://www.anaconda.com/legal/terms/terms-of-service>`__.
 
 Conda is written in python and Mamba is written C/C++ and has a faster
