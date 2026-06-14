@@ -944,6 +944,21 @@ If you see any packages listed from "repo.anaconda.com", these fall
 under the Anaconda Terms of Service and may require a license for
 continued use.
 
+As of recent releases, Anaconda also ships a conda plugin
+(``conda-anaconda-tos``) that surfaces this coverage automatically: when
+conda accesses a Terms-of-Service-covered Anaconda channel (for example,
+the ``main``, ``r``, or ``msys2`` channels under ``repo.anaconda.com``),
+the plugin prompts the user to accept, reject, or view the Terms of
+Service, and blocks the operation if rejected. Acceptance can also be
+managed non-interactively (for example via ``conda tos accept``, the
+``plugins.auto_accept_tos`` setting, or the
+``CONDA_PLUGINS_AUTO_ACCEPT_TOS`` environment variable). The plugin is
+bundled by default in current Miniconda and Anaconda Distribution
+installers but is not present in community installers such as Miniforge,
+so the appearance of such a prompt is itself a clear signal that an
+environment depends on ToS-covered channels. See
+https://github.com/anaconda/conda-anaconda-tos for details.
+
 uv
 --
 uv is an extremely fast Python package and project manager, written in
