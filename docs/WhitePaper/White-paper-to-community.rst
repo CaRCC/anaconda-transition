@@ -2,9 +2,6 @@
 Addressing the Challenges Posed by Anaconda's New Licensing Model
 ******************************************************************
 
-White paper to researchers, research computing facilitators, and institutional leadership
-==========================================================================================
-
 :Authors:
  Anna Alber,\ :sup:`1`
  Joseph Creech,\ :sup:`2`
@@ -32,7 +29,7 @@ White paper to researchers, research computing facilitators, and institutional l
 :Date: 2026-06-13
 
 Executive Summary
------------------
+=================
 
 When Anaconda Inc. introduced its revised Terms of Service (ToS) in
 Spring 2024, the changes created immediate uncertainty for academic
@@ -46,7 +43,7 @@ established collaborative workflows. This work reflects that context
 while focusing on practical and current paths forward.
 
 For the Community
-~~~~~~~~~~~~~~~~~
+-----------------
 
 The ``conda`` package manager is free and open-source — it is not
 going away.  The licensing concerns are specifically about packages
@@ -71,7 +68,7 @@ needs at no cost and with no licensing concerns.
 
 
 For Institutional Leadership
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 
 Anaconda Inc.'s revised `Terms of Service
 <https://www.anaconda.com/legal/terms/terms-of-service>`__, effective July
@@ -93,7 +90,7 @@ clearer, more stable academic terms.
 
 
 Introduction
-------------
+============
 
 Anaconda has long been a cornerstone of scientific and academic
 computing, offering a robust package management system and an
@@ -228,7 +225,7 @@ To address these challenges, ATWG had initiated several actions:
 
 
 Impact on Academic Institutions
--------------------------------
+===============================
 
 At the time of Anaconda's updates-to-ToS announcement, academic
 organizations faced a cascade of practical and financial hurdles:
@@ -290,7 +287,7 @@ organizations faced a cascade of practical and financial hurdles:
 
 
 Licensing and Cost Implications
--------------------------------
+===============================
 
 At the start of 2025, Anaconda Inc. `released
 <https://www.anaconda.com/blog/anaconda-for-education-empowering-the-academic-community>`__
@@ -372,7 +369,7 @@ detailed description of utilizing these methods is provided in the
 
 
 Compliance Concerns
--------------------
+===================
 
 The recent changes to Anaconda's licensing model, which limit the
 previously free distribution and usage of its platform for
@@ -531,7 +528,7 @@ and collaboration in an informed manner.
 .. _Alternative Solutions and Recommendations:
 
 Alternative Solutions and Recommendations
------------------------------------------
+=========================================
 
 Given the compliance challenges raised by Anaconda's new licensing
 model, academic and research institutions need to explore alternative
@@ -617,7 +614,7 @@ operational burdens of the new licensing restrictions.
 
 
 Conclusion
-----------
+==========
 
 While Anaconda's licensing changes pose significant challenges, they
 also present an opportunity to reexamine our dependencies and develop
@@ -627,7 +624,7 @@ thrive without disruption. To that end, our recommendations to the
 community are mentioned below.
 
 Recommendations:
-~~~~~~~~~~~~~~~~
+----------------
 
 We propose the following actions to mitigate the impact:
 
@@ -647,13 +644,13 @@ We propose the following actions to mitigate the impact:
 
 .. _Appendix:
    
-Appendix 
----------
+Appendix
+========
 
 .. _Scripts and Tools:
 
 Scripts and Tools
-~~~~~~~~~~~~~~~~~~~~~
+-----------------
 
 The Anaconda Transition Working Group set up a directory for scripts
 and tools to assist with institutions in their migration from Anaconda
@@ -662,7 +659,7 @@ so that the community can continue to improve and contribute to those
 efforts. https://github.com/jacreech/anaconda-transition-community-scripts
 
 Open-source Solutions
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 Below is a list of open-source options that the ATWG has put
 together. This is not a complete list but is a good starting point
@@ -682,7 +679,7 @@ route. Some of the solutions do not represent a full alternative to Anaconda.
 
   
 Conda vs Mamba
-~~~~~~~~~~~~~~
+--------------
 
 `Conda <https://github.com/conda/conda>`__ and `Mamba`
 <https://github.com/mamba-org/mamba>`__ are package managers and
@@ -724,7 +721,7 @@ described here. These include “micromamba”, “mambaforge”, etc.
 
 
 Conda vs Miniforge and alternate conda package channels
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------------
 
 You can continue to use conda as a package manager, but would need to
 configure it to only install packages from community-provided sources
@@ -755,7 +752,7 @@ is `bioconda <https://bioconda.github.io/>`__.
 
 
 Important Update on the "defaults" Channel
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------
 
 - Conda-forge has released a transition guide for migrating away from
   the "defaults" channel in the context of miniforge. Note that:
@@ -764,12 +761,12 @@ Important Update on the "defaults" Channel
 
     
 Resources
-'''''''''
+~~~~~~~~~
 - Transition Guide: https://conda-forge.org/docs/user/transitioning_from_defaults/
 - Deprecation Postponement Details: https://github.com/conda/conda/pull/14662
 
 Additional recommendations if using conda-forge
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------------------
 
 - Using conda-forge, if you don't already have conda installed
 
@@ -831,7 +828,7 @@ configuration as was done in the above example.
 
 
 Overview Conda vs Pip
-~~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 Many projects are now putting effort into creating wheels that allows for an easy installation of packages (e.g., scipy, torch, kafka, etc.) across many Linux distributions (see for example: `Building manylinux Python wheels <https://opensource.com/article/19/2/manylinux-python-wheels>`__)>
 	       
@@ -856,7 +853,7 @@ Comparison: Conda vs pip:
 
 
 Virtual environments in Python
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
 
 Virtual environments can be created via `Python’s venv module
 <https://docs.python.org/3/library/venv.html>`__, for convenience
@@ -899,7 +896,7 @@ tools exist to overcome the latter limitation, such as conda, mamba,
 Poetry/Pipenv and UV.
 
 Resources:
-''''''''''
+~~~~~~~~~~
 
 - `Understanding Conda and Pip <https://www.anaconda.com/blog/understanding-conda-and-pip>`__
 - `Pip vs Conda: A Guide to Managing Python Packages for Data Scientists <https://saturncloud.io/blog/pip-vs-conda-a-guide-to-managing-python-packages-for-data-scientists/>`__
@@ -907,7 +904,7 @@ Resources:
 - `Install packages in a virtual environment using pip and venv <https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/>`__
 
 Checking for Anaconda Repository Dependencies
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------
 
 Get a list of your environments:
 
@@ -933,13 +930,13 @@ under the Anaconda Terms of Service and may require a license for
 continued use.
 
 Pixi
-~~~~~~~~~~
+----
 Pixi is a fast and modern package manager that handles the same types of environments as Miniforge. It includes other features, but one of its main functions is to act as a package manager for conda environments. A new installation includes conda-forge as the default channel. Like Miniforge, it includes support for other conda channels, pip, etc.
 
 A guide to migrating from anaconda is available at the Pixi site here: https://pixi.prefix.dev/latest/switching_from/conda/
 
 R and Anaconda
-~~~~~~~~~~~~~~
+--------------
 
 Anaconda can be useful to manage separate virtual environments and R
 versions. This functionality can be retained while avoiding paid
@@ -954,7 +951,7 @@ specify different package paths using R_LIBS_USER / .libPaths() which
 offers the functionality of virtual environments.
 
 Block Anaconda Repo
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 As a sanity check, ATWG conducted a few tests, on nodes belonging to
 different HPC clusters, to install Python and R packages using
@@ -972,7 +969,7 @@ installing Python packages using ``py_install``,
 
 
 Other Alternatives
-~~~~~~~~~~~~~~~~~~
+------------------
 
 The primary motivating feature for many researchers from the beginning
 for the user of a tool like Anaconda was the ability to materialize a
@@ -984,7 +981,7 @@ adoption of build-from-source package management (i.e. Spack) and
 containerization (e.g., Apptainer).
 
 Spack
-~~~~~
+-----
 
 Spack is an HPC-centric package manager developed by the Department of
 Energy (DoE) national labs which allows users to instantiate one or
@@ -1001,7 +998,7 @@ shared build-cache and mirroring of packages to accelerate
 installation of packages.
 
 Containers
-~~~~~~~~~~
+----------
 
 Entirely separate from the present discussion is the modern quest for
 reproducibility and reusability of research software driving the
