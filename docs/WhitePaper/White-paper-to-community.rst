@@ -927,7 +927,7 @@ A limitation of the `venv` module is that a) it is only limited to
 Python packages, and b) it can only create virtual environments with a
 Python version as the one used to create the Python environment. Other
 tools exist to overcome the latter limitation, such as conda, mamba,
-Poetry/Pipenv and uv.
+uv, and pyenv.
 
 Resources:
 ~~~~~~~~~~
