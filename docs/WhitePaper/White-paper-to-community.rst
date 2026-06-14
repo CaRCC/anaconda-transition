@@ -335,11 +335,14 @@ a third party has been carried out for their products. However, they
 urge institutions to contact their `partner team
 <https://www.anaconda.com/legal>`__ at
 partnerships@anaconda.com should the need to pursue an embedded use
-case arises in academia. This is different from what was mentioned in
-their archival FAQ from `August 13, 2024
-<https://web.archive.org/web/20240813115338/https://www.anaconda.com/pricing/terms-of-service-faqs>`__, where no such requirement was stated for
-any kind of academic use including embedding, mirroring, or third
-party access.
+case arise in academia. Anaconda's archival FAQ from `September 5, 2024
+<https://web.archive.org/web/20240905131946/https://www.anaconda.com/pricing/terms-of-service-faqs>`__
+already declared: "A paid license is always required for any individual
+or entity that is embedding, mirroring, or providing third parties
+access to [its] products," without carving out an exception for academic
+use. The more recent materials are notable instead for adding an
+explicit academic exemption and directing institutions to the partner
+team for embedded academic use cases.
 
 Given that the state of affairs is still evolving at Anaconda Inc. and
 that there is a fair amount of ambiguity in what would constitute as
