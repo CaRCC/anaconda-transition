@@ -792,9 +792,9 @@ Important Update on the "defaults" Channel
 ------------------------------------------
 
 - Conda-forge has released a transition guide for migrating away from
-  the "defaults" channel in the context of miniforge. Note that:
-  * The "defaults" channel has been deprecated
-  * It is scheduled for removal in version 25.9
+  the "defaults" channel in the context of miniforge. Note that the
+  "defaults" channel has been deprecated and scheduled for removal in
+  version 25.9.
 
     
 Resources
