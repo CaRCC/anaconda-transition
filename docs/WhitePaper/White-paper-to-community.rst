@@ -982,7 +982,7 @@ uv
 --
 uv is an extremely fast Python package and project manager, written in
 Rust and developed by Astral. It has rapidly gained adoption across the
-Python community as a single tool that replaces pip, pip-tools, pipx,
+Python community as a single tool that replaces pip, pip-tools, pipx, twine,
 virtualenv, and (for many workflows) pyenv and Poetry, offering
 substantially faster dependency resolution and installation. uv operates
 within the standard Python packaging ecosystem (PyPI and wheels) and can
