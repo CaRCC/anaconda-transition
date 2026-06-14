@@ -699,7 +699,7 @@ together. This is not a complete list but is a good starting point
 should an insitution or a research team decide to go the open-source
 route. Some of the solutions do not represent a full alternative to Anaconda.
 
-- Conda/Miniconda (package manager behind Anaconda, but fully open‑source when used outside Anaconda’s distribution)
+- Conda (the BSD-3-Clause package manager behind Anaconda; fully open-source). Miniconda (a minimal Anaconda installer that defaults to Anaconda’s repository, so reconfigure it to conda-forge or another community channel to stay outside the Terms of Service)
 - Miniforge (pulls from conda-forge by default; Mambaforge was deprecated in July 2024)
 - Mamba (drop‑in replacement for Conda written in C++, bundled with Miniforge since version 23.3.1)
 - Pixi (Rust‑based package and environment manager, a modern alternative to miniforge with seamless mixing of PyPI + Conda packages)
