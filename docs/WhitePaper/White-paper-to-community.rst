@@ -717,8 +717,8 @@ Conda vs Mamba
 `Conda <https://github.com/conda/conda>`__ and `Mamba`
 <https://github.com/mamba-org/mamba>`__ are package managers and
 command-line tools, they can be used mostly interchangeably as Mamba
-was created as a drop-in replacement for Conda (with identical
-CLI). Both support channels like `conda-forge
+was created as a drop-in replacement for Conda (with a largely
+compatible CLI, with minor differences). Both support channels like `conda-forge
 <https://github.com/conda-forge>`__ and `Anaconda’s defaults
 <https://www.anaconda.com/docs/tools/working-with-conda/reference/default-channels>`__. The
 use of Anaconda Inc.’s defaults channels is subjected to `Anaconda
