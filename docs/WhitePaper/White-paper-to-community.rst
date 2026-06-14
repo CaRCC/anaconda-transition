@@ -243,15 +243,10 @@ organizations faced a cascade of practical and financial hurdles:
 2. Compliance Ambiguity
 
    CaRCC members reported receiving "non-compliance" notices for
-   shared installations on central clusters. This led to some of the
-   key questions remaining unanswered:
+   shared installations on central clusters. This raised a number of
+   key questions that remained unanswered; these are discussed in the
+   :ref:`Compliance Concerns` section.
 
-   -  Does an "academic tier" exemption cover external collaborators
-      (NSF- or DoE-funded researchers without formal university
-      appointments)?
-   -  Can the institution provide a single "proof of affiliation" to
-      Anaconda, or must every individual user register separately?
-      
 3. Transition Overhead
 
    Moving away from Anaconda-whether to conda-forge/Miniforge, Spack,
@@ -367,6 +362,8 @@ with them. A summarized version of these solutions is mentioned in the
 detailed description of utilizing these methods is provided in the
 :ref:`Appendix`.
 
+
+.. _Compliance Concerns:
 
 Compliance Concerns
 ===================
@@ -487,12 +484,6 @@ for policy development and review may include:
 
 **4. Secure Environment Cluster:**
 
-.. attention::
-
-   We might mention `Anaconda Business
-   <https://www.anaconda.com/guides/the-ultimate-guide-to-open-source-security-with-python-and-r#:~:text=Anaconda%20Business%20is%20an%20enterprise%2Dgrade%20package%20repository,do%20not%20comply%20with%20your%20legal%20requirements.>`__
-   for secure environments.
-
 Institutions operating a secure environment cluster would need to
 evaluate the security level of their cluster to decide whether the
 purchase of Anaconda's distribution is warranted or not. For example,
@@ -502,7 +493,11 @@ must have Anaconda's distribution available on the cluster instead of
 utilizing open-source alternatives. This is because the open-source
 alternatives, listed below, are not guaranteed to be compliant with
 security standards needed for regulated data and could compromise a
-secure environment cluster. On the other hand, most clusters with
+secure environment cluster. For such regulated or high-security
+deployments, Anaconda Inc.'s `Anaconda Business
+<https://www.anaconda.com/guides/the-ultimate-guide-to-open-source-security-with-python-and-r#:~:text=Anaconda%20Business%20is%20an%20enterprise%2Dgrade%20package%20repository,do%20not%20comply%20with%20your%20legal%20requirements.>`__
+offering provides an enterprise-grade package repository with verified
+provenance and may be worth evaluating. On the other hand, most clusters with
 requirements of housing sensitive datasets with Data Usage Agreement
 (DUA) and/or IRB's could still utilize alternative methods, mentioned
 below, for installing packages.
@@ -738,17 +733,16 @@ Anaconda, Inc. A common alternative channel is `conda-forge
 community-supplied packages. Another commonly used community channel
 is `bioconda <https://bioconda.github.io/>`__.
 
-.. attention::
-
-   According to their archival FAQ from `May 2025
-   <https://web.archive.org/web/20250506034856/https://www.anaconda.com/pricing/terms-of-service-faqs>`__,
-   we may not need to block Anaconda.com channels. However, ATWG had
-   conducted their own tests by blocking `Anaconda repository
-   <https://repo.anaconda.com>`__ and found out that one can continue to
-   install packages using the bioconda channel or python packages in R
-   using the `reticulate package
-   <https://rstudio.github.io/reticulate/>`__ with "conda-forge" set
-   as the default channel, without any issues.
+According to Anaconda Inc.'s archival FAQ from `May 2025
+<https://web.archive.org/web/20250506034856/https://www.anaconda.com/pricing/terms-of-service-faqs>`__,
+it may not be necessary to block Anaconda.com channels outright.
+Nevertheless, ATWG conducted its own tests by blocking the `Anaconda
+repository <https://repo.anaconda.com>`__ and confirmed that packages
+can still be installed using the bioconda channel, or Python packages
+in R using the `reticulate package
+<https://rstudio.github.io/reticulate/>`__ with "conda-forge" set as
+the default channel, without any issues. See the
+:ref:`Block Anaconda Repo` section for details on these tests.
 
 
 Important Update on the "defaults" Channel
@@ -949,6 +943,8 @@ available within R itself via `renv
 <https://rstudio.github.io/renv/>`__. R also offers the ability to
 specify different package paths using R_LIBS_USER / .libPaths() which
 offers the functionality of virtual environments.
+
+.. _Block Anaconda Repo:
 
 Block Anaconda Repo
 -------------------
