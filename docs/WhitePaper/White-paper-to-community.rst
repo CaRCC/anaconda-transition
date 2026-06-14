@@ -685,11 +685,11 @@ Appendix
 Scripts and Tools
 -----------------
 
-The Anaconda Transition Working Group set up a directory for scripts
-and tools to assist with institutions in their migration from Anaconda
-commercial channels. This has been spun off into a forked repository
-so that the community can continue to improve and contribute to those
-efforts. https://github.com/jacreech/anaconda-transition-community-scripts
+The Anaconda Transition Working Group set up a directory of scripts
+and tools to assist institutions with their migration from Anaconda
+commercial channels. These are available in the ``Misc/tools``
+directory of the project repository:
+https://github.com/CaRCC/anaconda-transition/tree/main/Misc/tools
 
 Open-source Solutions
 ---------------------
