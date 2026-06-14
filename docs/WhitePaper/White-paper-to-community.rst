@@ -591,7 +591,12 @@ Anaconda Content directly. Sharing that container with others outside
 their own Institution would appear to count as "distribution". Whether a
 Container image qualifies as "system outputs" — and is therefore covered
 by the Academic Policy's distribution exemption — is unclear, so sharing
-one might not be allowed outside the originating Institution.
+one might not be allowed outside the originating Institution. On the
+other hand, that exemption permits redistribution only insofar as it
+"remains within the scope of non-commercial, educational use," which
+researcher-to-researcher academic sharing would plausibly satisfy; the
+unresolved question is whether a container image counts as a "system
+output" at all.
 
 The only solution we see in this case is to make sure that the
 restricted Anaconda Inc. packages are not included in any Containers.
