@@ -1071,8 +1071,9 @@ containerization (e.g., Apptainer).
 Spack
 -----
 
-Spack is an HPC-centric package manager developed by the Department of
-Energy (DoE) national labs which allows users to instantiate one or
+Spack is an HPC-centric package manager created at Lawrence Livermore
+National Laboratory (LLNL) under U.S. Department of Energy (DoE)
+sponsorship, which allows users to instantiate one or
 more instances of itself, each of which can compile the whole world
 all the way down the dependency tree. This satisfies the need for
 getting specific Python versions onto the system for unprivileged
