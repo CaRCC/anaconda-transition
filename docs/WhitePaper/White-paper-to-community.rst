@@ -34,7 +34,7 @@ Executive Summary
 When Anaconda Inc. introduced its revised Terms of Service (ToS) in
 March 2024, the changes created immediate uncertainty for academic
 research computing. For years, Anaconda’s Python distribution and
-package‑management platform had been freely available for academic
+package-management platform had been freely available for academic
 use—both on local systems and across HPC clusters—serving as the
 foundation for scientific workflows in many departments. Institutions
 that rely on shared local systems and HPC clusters faced concerns
@@ -129,7 +129,7 @@ universities, and companies with fewer than 200 employees, but larger
 non-academic organizations, including research institutions and
 national labs, must obtain a license to use it. However, the academic
 community continued to stay concerned, as blog posts are not legally
-binding (unlike ToS --which were eventually updated in July, 2025), which led to the creation of `Anaconda
+binding (unlike ToS, which were eventually updated in July 2025), which led to the creation of `Anaconda
 Transition Working Group
 <https://carcc.org/anaconda-transition-working-group/>`__ (ATWG).
 
@@ -235,7 +235,7 @@ organizations faced a range of practical and financial challenges:
 
    Based on the original announcement, it was perceived that any
    institution with more than 200 employees must purchase a commercial
-   license. For a typical mid‐sized university—supporting dozens of
+   license. For a typical mid-sized university—supporting dozens of
    departments, central IT-managed HPC clusters, and distributed lab
    installations—annual fees could reach tens of thousands of
    dollars. These unplanned expenses threaten to divert funding away
@@ -250,8 +250,8 @@ organizations faced a range of practical and financial challenges:
 
 3. Transition Overhead
 
-   Moving away from Anaconda-whether to conda-forge/Miniforge, Spack,
-   or containers-requires substantial IT staff time, retraining of
+   Moving away from Anaconda—whether to conda-forge/Miniforge, Spack,
+   or containers—requires substantial IT staff time, retraining of
    faculty and students, and revalidation of research pipelines. One
    peer university estimated that piloting a Spack migration consumed
    over 200 staff-hours and delayed several high-priority simulation
@@ -391,8 +391,8 @@ model has allowed institutions to develop and deploy software
 environments, often across large-scale high-performance computing (HPC)
 systems, with minimal administrative burden.
 
-However, the new licensing changes— particularly for non-commercial
-users —could potentially introduce the risk of non-compliance in the
+However, the new licensing changes, particularly for non-commercial
+users, could potentially introduce the risk of non-compliance in the
 following areas:
 
 *License/Agreement Enforcement:*
@@ -701,9 +701,9 @@ route. Some of the solutions do not represent a full alternative to Anaconda.
 
 - Conda (the BSD-3-Clause package manager behind Anaconda; fully open-source). Miniconda (a minimal Anaconda installer that defaults to Anaconda’s repository, so reconfigure it to conda-forge or another community channel to stay outside the Terms of Service)
 - Miniforge (pulls from conda-forge by default; Mambaforge was deprecated in July 2024)
-- Mamba (drop‑in replacement for Conda written in C++, bundled with Miniforge since version 23.3.1)
-- Pixi (Rust‑based package, environment, and project manager with seamless mixing of PyPI + Conda packages, conda-forge by default)
-- uv (Rust‑based, ultra‑fast Python package, environment and project manager)
+- Mamba (drop-in replacement for Conda written in C++, bundled with Miniforge since version 23.3.1)
+- Pixi (Rust-based package, environment, and project manager with seamless mixing of PyPI + Conda packages, conda-forge by default)
+- uv (Rust-based, ultra-fast Python package, environment and project manager)
 - Pip (pulls from PyPI)
 - Pip + venv/virtualenv
 - pipx (Not a full environment manager, installs Python CLI tools in isolated environments)
