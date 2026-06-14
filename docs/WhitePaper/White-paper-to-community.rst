@@ -518,11 +518,16 @@ alternative methods mentioned below for installing packages.
 Keeping all of the above in mind, some of the key questions that still
 remain unanswered are:
 
-- Does an “academic tier” exemption cover external collaborators (NSF-
-  or DOE-funded researchers without formal university appointments)?
-
-- Can the institution provide a single “proof of affiliation” to
-  Anaconda, or must every individual user register separately?
+- Does the academic free-use program cover external collaborators who
+  lack an appointment and academic email at an Eligible Academic
+  Institution, given that individual participation requires signing the
+  Academic End User License Agreement and registering with an academic
+  email address? Researchers affiliated with a qualifying non-profit or
+  research organization may instead be eligible under Anaconda Inc.'s
+  Non-Profit & Research Policy, which nonetheless excludes
+  government-affiliated institutions, Federally Funded Research and
+  Development Centers (FFRDCs), and the U.S. Department of Energy
+  National Laboratories.
 
 - Would it be possible for the research community to obtain further
   clarity from Anaconda Inc. on free distribution of containerization
