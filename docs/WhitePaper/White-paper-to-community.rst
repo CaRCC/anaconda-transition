@@ -780,8 +780,8 @@ Nevertheless, ATWG conducted its own tests by blocking the `Anaconda
 repository <https://repo.anaconda.com>`__ and confirmed that packages
 can still be installed using the bioconda channel, or Python packages
 in R using the `reticulate package
-<https://rstudio.github.io/reticulate/>`__ with "conda-forge" set as
-the default channel, without any issues. See the
+<https://rstudio.github.io/reticulate/>`__ with packages installed from the conda-forge channel, without
+any issues. See the
 :ref:`Block Anaconda Repo` section for details on these tests.
 
 
@@ -1035,8 +1035,8 @@ be available in `CRAN <https://cran.r-project.org/>`__ or other
 non-conda repositories. Additionally, virtual environments are
 available within R itself via `renv
 <https://rstudio.github.io/renv/>`__. R also offers the ability to
-specify different package paths using R_LIBS_USER / .libPaths() which
-offers the functionality of virtual environments.
+specify custom package library paths using R_LIBS_USER / .libPaths(),
+giving users control over which package directories R uses.
 
 .. _Block Anaconda Repo:
 
