@@ -700,8 +700,8 @@ should an insitution or a research team decide to go the open-source
 route. Some of the solutions do not represent a full alternative to Anaconda.
 
 - Conda/Miniconda (package manager behind Anaconda, but fully open‑source when used outside Anaconda’s distribution)
-- Miniforge/Mambaforge (pulls from conda-forge by default)
-- Mamba (drop‑in replacement for Conda written in C++, bundled with Miniforge as Mambaforge)
+- Miniforge (pulls from conda-forge by default; Mambaforge was deprecated in July 2024)
+- Mamba (drop‑in replacement for Conda written in C++, bundled with Miniforge since version 23.3.1)
 - Pixi (Rust‑based package and environment manager, a modern alternative to miniforge with seamless mixing of PyPI + Conda packages)
 - uv (Rust‑based, ultra‑fast Python package, environment and project manager)
 - Pip (pulls from PyPI)
@@ -750,7 +750,9 @@ libraries.
 
 There are numerous permutations of these tools for installers
 available that include different combinations of the components
-described here. These include “micromamba”, “mambaforge”, etc.
+described here. These include “micromamba” (a standalone static
+binary that needs no base environment) and the now-deprecated
+“mambaforge”.
 
 
 Conda vs Miniforge and alternate conda package channels
