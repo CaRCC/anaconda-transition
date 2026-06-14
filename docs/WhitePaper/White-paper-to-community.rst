@@ -1004,15 +1004,19 @@ uses uv internally to resolve and install PyPI dependencies, so the two
 can be complementary.
 
 Astral has also introduced `pyx <https://astral.sh/pyx>`__, a
-Python-native package registry (currently in beta) that serves as an
-optimized, uv-aware backend for PyPI and other public indexes. Of
+Python-native package registry (a commercial, early-access product)
+that provides an optimized, uv-aware mirror and proxy layer for PyPI
+and other public indexes. Of
 particular relevance to the secure-environment and compliance discussion,
 pyx can serve curated, pre-built wheels (including hardware-specific
 builds such as GPU/CUDA packages), enforce reproducible builds, and apply
 organizational compliance filters (for example by package age,
 popularity, or known vulnerabilities). Tooling of this kind points toward
 a path for institutions to obtain reliable, policy-compliant pre-built
-binaries without depending on Anaconda's distribution channels.
+binaries without depending on Anaconda's distribution channels. This remains an early-stage, commercial
+option rather than a free alternative, and its trajectory is uncertain
+following Astral's `March 2026 announcement
+<https://astral.sh/blog/openai>`__ that it is joining OpenAI.
 
 A guide to getting started with uv is available at the Astral
 documentation site here: https://docs.astral.sh/uv/
