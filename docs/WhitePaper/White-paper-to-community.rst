@@ -1065,20 +1065,16 @@ installing Python packages using ``py_install``,
 ``virtualenv_install``, and ``conda_install`` on an R shell.
 
 
-Other Alternatives
-------------------
-
-The primary motivating feature for many researchers from the beginning
-for the user of a tool like Anaconda was the ability to materialize a
-specific Python and its dependencies (Python and non-Python) on the
-local filesystem as an unprivileged user. This is what a virtual
-environment solution solves. Two new developments in recent times that
-alleviate the need for this in the first place are improvements and
-adoption of build-from-source package management (i.e. Spack) and
-containerization (e.g., Apptainer).
-
 Spack
 -----
+
+A primary reason researchers reach for a tool like Anaconda is to
+materialize a specific Python and its dependencies (both Python and
+non-Python) on the local filesystem as an unprivileged user, which is
+what a virtual environment provides. Two more recent developments can
+alleviate the need for that approach altogether: build-from-source
+package management, described here, and containerization, described
+below.
 
 Spack is an HPC-centric package manager created at Lawrence Livermore
 National Laboratory (LLNL) under U.S. Department of Energy (DOE)
