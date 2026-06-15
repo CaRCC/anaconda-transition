@@ -25,8 +25,8 @@ Addressing the Challenges Posed by Anaconda's New Licensing Model
  :sup:`9` West Virginia University;
  :sup:`10` University of Alabama at Birmingham.
 
-:Version: 1.0
-:Date: 2026-06-13
+:Version: 1.0.0
+:Date: 2026-06-14
 
 Executive Summary
 =================
