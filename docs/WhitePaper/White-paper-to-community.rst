@@ -35,7 +35,7 @@ When Anaconda Inc. introduced its revised Terms of Service (ToS) in
 March 2024, the changes created immediate uncertainty for academic
 research computing. For years, Anaconda's Python distribution and
 package-management platform had been freely available for academic
-use—both on local systems and across HPC clusters—serving as the
+use across both local systems and HPC clusters, serving as the
 foundation for scientific workflows in many departments. Institutions
 that rely on shared local systems and HPC clusters faced concerns
 about compliance scope, budget exposure, and potential disruption to
@@ -45,7 +45,7 @@ while focusing on practical and current paths forward.
 For the Community
 -----------------
 
-The ``conda`` package manager is free and open-source — it is not
+The ``conda`` package manager is free and open-source.  It is not
 going away.  The licensing concerns are specifically about packages
 hosted in Anaconda Inc.'s "defaults" channel and their distribution
 platform. **For most users, the simplest path forward is to use**
@@ -54,15 +54,15 @@ platform. **For most users, the simplest path forward is to use**
 instead of the Anaconda distribution). Conda-forge is a large,
 community-maintained collection of packages that does not fall under
 Anaconda's Terms of Service. You can continue using ``conda`` (or
-``mamba``) exactly as before — just sourcing packages from conda-forge
+``mamba``) exactly as before, just sourcing packages from conda-forge
 instead of "defaults."
 
 That said, Anaconda Inc. does provide value beyond just hosting
 packages.  Their curated "defaults" channel undergoes additional
 vetting, which may matter for institutions with stringent security or
 reproducibility requirements.  Organizations in regulated or
-high-security environments may find Anaconda's commercial offerings —
-including verified package provenance and enterprise support — worth
+high-security environments may find Anaconda's commercial offerings,
+including verified package provenance and enterprise support, worth
 evaluating. For others, conda-forge covers most scientific computing
 needs at no cost and with no licensing concerns.
 
@@ -75,8 +75,8 @@ Anaconda Inc.'s revised `Terms of Service
 2025, introduce new compliance obligations for academic institutions. While
 Anaconda remains free for accredited educational entities under their `Academic
 Policy <https://www.anaconda.com/legal/terms/academic>`__, institutions must
-now proactively secure an Eligible Academic Institution (EAI) agreement —
-renewed annually — and are held responsible for ensuring all users comply with
+now proactively secure an Eligible Academic Institution (EAI) agreement,
+renewed annually, and are held responsible for ensuring all users comply with
 the terms. Key risk areas include restrictions on embedding Anaconda packages
 in containers, mirroring repositories, and providing access to third parties
 (e.g., external collaborators), all of which may require a paid license even
